@@ -20,6 +20,10 @@ body {
 	font-family: "Montserrat", sans-serif;
 	background-color: var(--bgc-mobile);
 	color: var(--gray-1);
+
+	padding: 2rem 0.75rem 1.5rem;
+	max-width: 1024px;
+	margin: 0 auto;
 }
 
 h1,
