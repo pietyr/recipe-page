@@ -266,12 +266,26 @@ footer a {
 }
 
 @media (min-width: 775px) {
+	body {
+		padding: 3.25rem 0rem 1.5rem;
+		gap: 3rem;
+	}
+
+	article,
+	section {
+		gap: 2rem;
+	}
+
 	h1 {
 		font-size: 3rem;
 	}
 
 	header p {
 		font-size: 0.875rem;
+	}
+
+	header > img {
+		margin-top: 1.5rem;
 	}
 
 	div.main-wrapper {
