@@ -133,15 +133,31 @@ span.value {
 	line-height: 1.219;
 }
 
+@media (min-width: 400px) {
+	.material-symbols-outlined {
+		font-size: 1.75rem;
+	}
+
+	span.title {
+		font-size: 0.625rem;
+	}
+
+	span.value {
+		font-size: 0.875rem;
+	}
+}
+
 main,
 article,
 section,
-div.checkbox-wrapper {
+div.checkbox-wrapper,
+div.main-wrapper {
 	display: flex;
 	flex-direction: column;
 }
 
-main {
+main,
+div.main-wrapper {
 	gap: 1.5rem;
 }
 
@@ -167,10 +183,14 @@ input[type="checkbox"] {
 	border: 1px solid var(--gray-3);
 }
 
-label span {
+label > span {
 	display: block;
 	font-size: 0.875rem;
 	line-height: calc(25 / 14);
+}
+
+span.italic {
+	font-style: italic;
 }
 
 label b {
@@ -243,4 +263,53 @@ footer p {
 
 footer a {
 	font-weight: 700;
+}
+
+@media (min-width: 775px) {
+	h1 {
+		font-size: 3rem;
+	}
+
+	header p {
+		font-size: 0.875rem;
+	}
+
+	div.main-wrapper {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	aside {
+		order: 2;
+		flex-flow: column nowrap;
+		height: fit-content;
+		gap: 2.5rem;
+		padding: 3.75rem 2.5rem;
+		border-radius: 0.75rem;
+		box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+	}
+
+	.info {
+		flex: unset;
+	}
+
+	.info:first-child {
+		flex-basis: unset;
+		margin-bottom: unset;
+	}
+
+	main {
+		max-width: 530px;
+	}
+
+	h2 {
+		font-size: 1.5rem;
+	}
+
+	label span {
+		font-size: 1rem;
+	}
+
+	p.source {
+		font-size: 1rem;
+	}
 }
